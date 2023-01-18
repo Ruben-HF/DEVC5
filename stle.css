@@ -1,0 +1,71 @@
+
+#blogprincipal{
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,7,12,0.21),rgba(5,7,12,0.21)), url(https://www.anahuac.mx/mexico/sites/default/files/noticias/Home-Office.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content:flex-end;
+}
+
+.blg-prin{
+    color: aliceblue;
+    max-width: 45%  !important;
+    max-height: 50% !important;
+    background: rgba(126, 109, 109, 0.733)
+}
+
+#help{
+    display: flex;
+    background-color:whitesmoke;
+    align-items: center;
+    padding: 5%;
+}
+
+.cuentanosarea{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.cuentanostxt{
+    margin: 3%;
+    width: 100% !important;
+}
+
+.cuentanosbtn{
+    margin: 3%;
+    width: 100% !important;
+}
+
+.ayudarte{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifcuentanos;
+}
+
+#contactus{
+    display: flex;
+    background-color:rgb(207, 207, 207);
+    align-items: center;
+    padding: 5%;
+    flex-wrap: wrap;
+}
+
+.mailto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.cus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.contacts{
+    color: black;
+    text-decoration: none;
+}

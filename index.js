@@ -143,17 +143,39 @@ saveBtn.addEventListener('click', function() {
 
 // Handle the edit button click
 notesList.addEventListener('click', function(event) {
-  if (event.target.classList.contains('edit-btn')) {
+    if (event.target.classList.contains('edit-btn')) {
+    // Get the note index
     const noteEl = event.target.parentElement.parentElement;
     const noteIndex = Array.from(notesList.children).indexOf(noteEl);
+    // Load the note into the input fields
     const note = notes[noteIndex];
     noteTitleInput.value = note.title;
     noteTextInput.value = note.text;
-    notes.splice(noteIndex, 1);
+    // Change the text of the edit button to "Guardar"
+    event.target.textContent = 'Guardar';
+    event.target.classList.remove("btn-outline-success");
+    event.target.classList.add("btn-warning");
+    // Disable the save button
+    saveBtn.disabled = true;
+    saveBtn.style.display = "none";
+    // Add a new click event listener to the save button
+    event.target.addEventListener('click', function() {
+    // Update the note with the new values
+    notes[noteIndex].title = noteTitleInput.value;
+    notes[noteIndex].text = noteTextInput.value;
+    // Reset the input fields
+    noteTitleInput.value = '';
+    noteTextInput.value = '';
+    // Render the updated notes list
     renderNotesList();
     saveNotes();
-  }
+    // Enable the save button
+    saveBtn.disabled = false;
+    saveBtn.style.display = "block";
+    });
+    }
 });
+    
 
 // Handle the delete button click
 notesList.addEventListener('click', function(event) {

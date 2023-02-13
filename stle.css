@@ -97,6 +97,8 @@ main{
 }
 
 
+
+
 .Registro{
     margin-top: 6%;
     width: 100%;
@@ -106,7 +108,7 @@ main{
 }
 
 .formu{
-    width: 60%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -128,7 +130,7 @@ main{
 }
 
 table{
-    width: 60%;
+    width: 90%;
     justify-content: space-evenly;
 }
 
@@ -136,6 +138,9 @@ td{
     flex-wrap: wrap;
     padding-bottom: 6%;
 }
+
+
+
 
 
 .personal{
@@ -224,5 +229,129 @@ h2{
 
 .nombreNos{
     width: 100%;
+}
+
+
+#ToDo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.ToDo{
+    width: 80%;
+    box-shadow: 0 0 10px #ccc;   
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+
+
+
+.notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+
+#notes-app {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-content: space-evenly;
+    height: 650px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    padding: 20px;
+}
+  
+#notes-list {
+    flex: 1;
+    overflow-y: scroll;
+}
+  
+.note {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: solid #333;
+    align-content: space-around;
+}
+  
+.note-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.note-actions {
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 3%;
+}
+  
+#note-inputs {
+    padding: 10px;
+}
+  
+#note-title-input,
+#note-text-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+  
+#note-text-input {
+    height: 200px;
+    resize: none;
+}
+  
+#save-btn {
+    padding: 10px 20px;
+    width: 100%;
+}
+  
+
+@media (min-width: 1080px) {
+    
+    #AppsC5{
+        display: flex;
+        align-items:first baseline;
+        justify-content: space-around;
+    }
+
+    .ToDo{
+        width: 100%;
+        box-shadow: 0 0 10px #ccc;   
+        border-radius: 10px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    .notes{
+        height: auto;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    
+    #notes-app {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-content: space-evenly;
+        min-height: 635px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        padding: 20px;
+    }
 }
 

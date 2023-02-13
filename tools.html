@@ -53,23 +53,46 @@
 
         </header>
 
-        <section>
 
-            <section class="Registro">
-                <form action="" class="formu">
-                    <label for="textotxt" style="font-weight: bold;" >Pendiente: </label>
-                    <input type="text" id="textotext" class="textarea" placeholder="Escribe la tarea pendiente.">
+        <main></main>
+
+        <section id="AppsC5">
+
+            <section id="ToDo">
+                <section class="ToDo">
+    
+                    <section class="Registro">
+                        <form action="" class="formu">
+                            <label for="textotxt" style="font-weight: bold;" >Pendiente: </label>
+                            <input type="text" id="textotext" class="textarea" placeholder="Escribe la tarea pendiente.">
+                
+                            <button onclick="guardar()" class="btn btn-primary" style="width: 100%;">Registrar</button>
+                        </form>
+                    </section>
         
-                    <button onclick="guardar()" class="btn btn-primary" style="width: 100%;">Registrar</button>
-                </form>
+                    <section id="Edit" class="Lista">
+                        <table id="lista"></table>
+                    </section>
+        
+                </section>
             </section>
-
-            <section id="Edit" class="Lista">
-                <table id="lista"></table>
+            
+              
+            <section class="notes">        
+                <section id="notes-app">
+                    <h1 style="display: flex; width: 100%; text-align: center; align-content: center; justify-content: center;">Mis Notas</h1>
+                    <div id="notes-list"></div>
+                    <div id="note-inputs">
+                    <input type="text" id="note-title-input" style="margin-top: 3%;" placeholder="Título de la Nota">
+                    <textarea id="note-text-input" placeholder="Escribe tu nota"></textarea>
+                    <button id="save-btn" class="btn btn-primary">Guardar</button>
+                    </div>
+                </section>
             </section>
 
         </section>
-          
+        
+
         <main></main>
 
         <footer class="py-3 my-4">

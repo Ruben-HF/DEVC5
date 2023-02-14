@@ -361,7 +361,7 @@ h2{
 
 
 #contador{
-    width: 80%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -409,3 +409,51 @@ h2{
     border-radius: 10px !important;
     margin-bottom: 3% !important;
 }
+
+#calculadora{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;  
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+.calcutable {
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+.input[type="text"] {
+    background-color: #222222;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    height: 80px;
+    text-align: right;
+    width: 100%;
+    border-radius: 10px;
+    padding: 3%;
+}
+  
+.buttoncal {
+    background-color: #d3d3d3;
+    border: none;
+    color: #000000;
+    font-size: 30px;
+    height: 80px;
+    width: 100%;
+    border-radius: 10px;
+}
+  
+button:hover {
+    background-color: #b8b8b8;
+}
+  
+button:active {
+    background-color: #a0a0a0;
+}
+  

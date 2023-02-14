@@ -212,3 +212,16 @@ resetBtn.addEventListener("click", function() {
     count = 0;
     counterEl.innerHTML = count;
 });
+
+
+// CALCULADORA
+
+function addToResult(value) {
+    document.getElementById("result").value += value;
+  }
+  
+  function calculate() {
+    var result = eval(document.getElementById("result").value);
+    document.getElementById("result").value = result;
+}
+  

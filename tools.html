@@ -97,8 +97,47 @@
                     <button id="reset" class="btn btn-outline-secondary">Reiniciar</button>
                     <button id="increment" class="btn btn-outline-success">+</button>
                 </div>
-                
             </section> 
+
+
+            <section id="calculadora">
+                <h1 style="display: flex; width: 100%; text-align: center; align-content: center; justify-content: center; padding-top:3%;">Mi Calculadora</h1>
+                
+                <div>
+                    <table class="calcutable">
+                        <tr>
+                          <td colspan="4"><input type="text" id="result" disabled class="input"></td>
+                        </tr>
+                        <tr>
+                          <td><button class="buttoncal" onclick="addToResult('7')">7</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('8')">8</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('9')">9</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('/')">÷</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="buttoncal" onclick="addToResult('4')">4</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('5')">5</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('6')">6</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('*')">x</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="buttoncal" onclick="addToResult('1')">1</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('2')">2</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('3')">3</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('-')">-</button></td>
+                        </tr>
+                        <tr>
+                          <td><button class="buttoncal" onclick="addToResult('0')">0</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('.')">.</button></td>
+                          <td><button class="buttoncal" onclick="calculate()">=</button></td>
+                          <td><button class="buttoncal" onclick="addToResult('+')">+</button></td>
+                        </tr>
+                      </table>
+                      
+                </div>
+
+            </section> 
+
 
         </section>
         

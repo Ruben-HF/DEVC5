@@ -37,8 +37,9 @@ function render() {
     datos.forEach((element,index) => {
         lista.innerHTML += `
         <td style="width: 100%"> ${element.texto} </td>
-        <td style="width: 100%"> <button onclick="borrar(${index})" class="btn btn-outline-success" style="min-width: 100%"> Completado </button> </td>
         <td style="width: 100%"> <button onclick="editar(${index})" class="btn btn-outline-secondary" style="min-width: 100%"> Editar </button> </td>
+        <td style="width: 100%"> <button onclick="borrar(${index})" class="btn btn-outline-success" style="min-width: 100%"> Completado </button> </td>
+        
         `
     });
 
@@ -63,8 +64,9 @@ function editar(ps){
 
             lista.innerHTML = `
             <td> ${nombre} </td>
+            <td> <button onclick="salir(this)" class=" btn btn-outline-danger" style="width:100%"> Salir </button> </td>
             <td> <button onclick="reguardar(${i})" class="btn btn-warning" style="width:100%"> Guardar </button> </td>
-            <td> <button onclick="salir(this)" class="btn btn-danger" style="width:100%"> Salir </button> </td>
+            
             `
         }
     }
@@ -116,8 +118,9 @@ function renderNotesList() {
     noteEl.innerHTML = `
       <div class="note-title">${note.title}</div>
       <div class="note-actions">
-        <button class="edit-btn btn btn-outline-success" style="width: 45%;">Visualizar</button>
         <button class="delete-btn btn btn-outline-danger" style="width: 45%;">Eliminar</button>
+        <button class="edit-btn btn btn-outline-success" style="width: 45%;">Visualizar</button>
+        
       </div>
     `;
     notesList.appendChild(noteEl);
@@ -190,3 +193,22 @@ notesList.addEventListener('click', function(event) {
 
 // Render the notes list for the first time
 renderNotesList();
+
+
+//CONTADOR
+
+const counterEl = document.getElementById("counter");
+const incrementBtn = document.getElementById("increment");
+const resetBtn = document.getElementById("reset");
+      
+let count = 0;
+      
+incrementBtn.addEventListener("click", function() {
+    count++;
+    counterEl.innerHTML = count;
+});
+      
+resetBtn.addEventListener("click", function() {
+    count = 0;
+    counterEl.innerHTML = count;
+});

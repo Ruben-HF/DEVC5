@@ -213,7 +213,6 @@ h2{
     transform: perspective(1000px) rotateY(180deg)
 }
 
-
 .tarjeta:hover .front{
     transform: perspective(1000px)  rotateY(180deg)
 }
@@ -232,11 +231,18 @@ h2{
 }
 
 
+#AppsC5{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
 #ToDo{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: 50%;
 }
 
 .ToDo{
@@ -254,9 +260,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
     height: 100vh;
-    margin-bottom: 3%;
-    margin-top: 3%;
 }
 
 
@@ -321,26 +326,25 @@ h2{
 }
   
 
-@media (min-width: 1080px) {
+@media (max-width: 1080px) {
     
     #AppsC5{
         display: flex;
-        align-items:first baseline;
+        flex-wrap: wrap;
+        align-items: baseline;
         justify-content: space-around;
     }
 
-    .ToDo{
+    #ToDo{
         width: 100%;
-        box-shadow: 0 0 10px #ccc;   
         border-radius: 10px;
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-top: 9px;
+        margin-bottom: 9px;
     }
     
     .notes{
+        width: 80%;
         height: auto;
-        margin-left: 12px;
-        margin-right: 12px;
     }
     
     #notes-app {
@@ -355,3 +359,53 @@ h2{
     }
 }
 
+
+#contador{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;  
+    border-radius: 10px;
+    margin-top: 3%;
+}
+
+#counter {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.botonescontador{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#increment {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 45%;
+    border-radius: 10px !important;
+    margin-bottom: 3% !important;
+}
+
+#reset {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 45%;
+    border-radius: 10px !important;
+    margin-bottom: 3% !important;
+}

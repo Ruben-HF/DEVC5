@@ -464,3 +464,15 @@ button:active {
     width: 100% !important;
     margin-bottom: 3%;
 }
+
+.igual{
+    background-color: whitesmoke;
+    color: rgba(25,135,84,255);
+    border-color: rgba(25,135,84,255);
+    border: solid 0.5px;
+}
+
+.igual:hover{
+    background-color: rgba(25,135,84,255);
+    color: white;
+}

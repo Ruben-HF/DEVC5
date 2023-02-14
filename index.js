@@ -225,3 +225,18 @@ function addToResult(value) {
     document.getElementById("result").value = result;
 }
   
+function reset() {
+    document.getElementById("result").value = "";
+}
+
+function handleKeyPress(event) {
+    var keyCode = event.keyCode || event.which;
+    var keyValue = String.fromCharCode(keyCode);
+  
+    if (/[0-9]|\.|\+|\-|\*|\//.test(keyValue)) {
+      addToResult(keyValue);
+      event.preventDefault();
+    }
+}
+  
+  

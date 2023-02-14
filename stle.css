@@ -410,6 +410,10 @@ h2{
     margin-bottom: 3% !important;
 }
 
+
+
+
+
 #calculadora{
     width: 45%;
     display: flex;
@@ -428,21 +432,20 @@ h2{
   }
   
 .input[type="text"] {
-    background-color: #222222;
-    border: none;
-    color: #ffffff;
-    font-size: 30px;
-    height: 80px;
     text-align: right;
+    font-size: 30px;
     width: 100%;
-    border-radius: 10px;
-    padding: 3%;
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px;
+    box-sizing: border-box;
 }
   
 .buttoncal {
-    background-color: #d3d3d3;
+    background-color: #f0f0f0;
     border: none;
-    color: #000000;
+    color: #333;
     font-size: 30px;
     height: 80px;
     width: 100%;
@@ -457,3 +460,7 @@ button:active {
     background-color: #a0a0a0;
 }
   
+#btn_rstcal {
+    width: 100% !important;
+    margin-bottom: 3%;
+}

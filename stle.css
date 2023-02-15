@@ -357,6 +357,28 @@ h2{
         box-shadow: 0 0 10px #ccc;
         padding: 20px;
     }
+
+    #contador{
+        width: 80% !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;  
+        border-radius: 10px;
+        margin-top: 3%;
+    }
+
+    #calculadora{
+        width: 80% !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;  
+        border-radius: 10px;
+        margin-top: 3%;
+    }
 }
 
 

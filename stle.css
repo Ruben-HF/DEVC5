@@ -498,3 +498,8 @@ button:active {
     background-color: rgba(25,135,84,255);
     color: white;
 }
+
+tr[draggable="true"] {
+    cursor: move;
+}
+

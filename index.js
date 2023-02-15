@@ -1,4 +1,4 @@
-console.log('Hola')
+console.log('Mini Apps MISAPPS generadas por Rubén Emmanuel Herrera Flores - Derechos reservados')
 
 //TODO LIST
 
@@ -20,6 +20,28 @@ function guardar(){
     render()
 }
 
+function moveUp(position) {
+    let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : [];
+    if (position > 0) {
+        let temp = datos[position];
+        datos[position] = datos[position - 1];
+        datos[position - 1] = temp;
+        localStorage.setItem('valores', JSON.stringify(datos));
+        render();
+    }
+}
+
+function moveDown(position) {
+    let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : [];
+    if (position < datos.length - 1) {
+        let temp = datos[position];
+        datos[position] = datos[position + 1];
+        datos[position + 1] = temp;
+        localStorage.setItem('valores', JSON.stringify(datos));
+        render();
+    }
+}
+
 function render() {
     console.log(localStorage.getItem('valores'))
 
@@ -37,13 +59,28 @@ function render() {
     datos.forEach((element,index) => {
         lista.innerHTML += `
         <td style="width: 100%"> ${element.texto} </td>
-        <td style="width: 100%"> <button onclick="editar(${index})" class="btn btn-outline-secondary" style="min-width: 100%"> Editar </button> </td>
-        <td style="width: 100%"> <button onclick="borrar(${index})" class="btn btn-outline-success" style="min-width: 100%"> Completado </button> </td>
+        <td style="width: auto"> 
+            <button onclick="moveUp(${index})" class="btn btn-outline-primary btn-move-up" style="min-width: 100%">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </td>
+        <td style="width: auto;"> 
+            <button onclick="moveDown(${index})" class="btn btn-outline-primary btn-move-down" style="min-width: 100%">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </td>
+        
+        <td style="min-width: 100%"> 
+            <button onclick="editar(${index})" class="btn btn-outline-secondary" style="min-width: 100%"> Editar </button> 
+        </td>
+        <td style="min-width: 100%"> 
+            <button onclick="borrar(${index})" class="btn btn-outline-success" style="min-width: 100%"> Completado </button> 
+        </td>
         
         `
     });
-
 }
+
 
 function borrar(position){
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
@@ -94,7 +131,8 @@ function salir(e){
     render()
 }
 
-render()
+render();
+
 
 
 //NOTAS
@@ -193,6 +231,10 @@ notesList.addEventListener('click', function(event) {
 
 // Render the notes list for the first time
 renderNotesList();
+
+
+
+
 
 
 //CONTADOR

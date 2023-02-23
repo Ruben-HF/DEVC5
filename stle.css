@@ -285,7 +285,6 @@ h2{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border-bottom: solid #333;
     align-content: space-around;
 }
   

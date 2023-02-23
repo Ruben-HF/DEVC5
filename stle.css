@@ -440,19 +440,26 @@ h2{
     width: 45%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;  
     border-radius: 10px;
     margin-top: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+#divCal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .calcutable {
     border-collapse: collapse;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
-    min-width: 300px;
+    border-radius: 10px;
 }
   
 .input[type="text"] {
@@ -461,7 +468,7 @@ h2{
     width: 100%;
     border-radius: 10px !important;
     color: #333333;
-    padding: 10px;
+    padding: 6px;
     box-sizing: border-box;
 }
   
@@ -470,7 +477,7 @@ h2{
     border: none;
     color: #333;
     font-size: 30px;
-    height: 80px;
+    height: 100%;
     width: 100%;
     border-radius: 10px;
 }
@@ -484,7 +491,7 @@ button:active {
 }
   
 #btn_rstcal {
-    width: 100% !important;
+    width: 90% !important;
     margin-bottom: 3%;
 }
 

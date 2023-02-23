@@ -256,7 +256,7 @@ h2{
 
 
 
-.notes{
+#notes{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +296,7 @@ h2{
   
 .note-actions {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     margin-bottom: 3%;
 }
   
@@ -342,7 +342,7 @@ h2{
         margin-bottom: 9px;
     }
     
-    .notes{
+    #notes{
         width: 80%;
         height: auto;
     }

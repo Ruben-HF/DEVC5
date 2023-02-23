@@ -1,0 +1,108 @@
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+  
+.fecha {
+    float: right;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section.PDFGen {
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+label {
+    margin-bottom: 10px;
+
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+button:hover {
+    background-color: #3e8e41;
+
+}
+
+
+
+#here{
+    background-color: whitesmoke;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+
+html,body{
+    height:100%;
+    margin: 0;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.espacio{
+    height: 100%;
+    width: 100%;
+    display: flex;    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer {
+    position:static;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 20px;
+}

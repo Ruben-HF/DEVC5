@@ -379,6 +379,19 @@ h2{
         border-radius: 10px;
         margin-top: 3%;
     }
+
+
+    #reset {
+        font-size: 18px !important;
+        font-weight: bold;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 45%;
+        border-radius: 10px !important;
+        margin-bottom: 3% !important;
+    }
+
 }
 
 

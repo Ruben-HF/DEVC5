@@ -260,9 +260,9 @@ resetBtn.addEventListener("click", function() {
 
 function addToResult(value) {
     document.getElementById("result").value += value;
-  }
+}
   
-  function calculate() {
+function calculate() {
     var result = eval(document.getElementById("result").value);
     document.getElementById("result").value = result;
 }
@@ -270,16 +270,23 @@ function addToResult(value) {
 function reset() {
     document.getElementById("result").value = "";
 }
-
+  
 function handleKeyPress(event) {
-    var keyCode = event.keyCode || event.which;
-    var keyValue = String.fromCharCode(keyCode);
+   var keyCode = event.keyCode || event.which;
+   var keyValue = String.fromCharCode(keyCode);
   
     if (/[0-9]|\.|\+|\-|\*|\//.test(keyValue)) {
-      addToResult(keyValue);
-      event.preventDefault();
+        addToResult(keyValue);
+        event.preventDefault();
+    }
+  
+    if (keyCode === 13) {
+        calculate();
+        event.preventDefault();
     }
 }
+  
+
   
 
 

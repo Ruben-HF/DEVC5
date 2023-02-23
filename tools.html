@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="/stle.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     </head>
 
 
@@ -101,7 +102,7 @@
             </section> 
 
 
-            <section id="calculadora">
+            <!-- <section id="calculadora">
                 <h1 style="display: flex; width: 100%; text-align: center; align-content: center; justify-content: center; padding-top:3%;">Mi Calculadora</h1>
                 
                 <div>
@@ -138,7 +139,45 @@
                       
                 </div>
 
-            </section> 
+            </section>  -->
+
+            <section id="calculadora">
+                <h1 style="display: flex; width: 100%; text-align: center; align-content: center; justify-content: center; padding-top:3%;">Mi Calculadora</h1>
+              
+                <div>
+                  <table class="calcutable">
+                    <tr>
+                      <td colspan="4"><input type="text" id="result" class="input" onkeypress="handleKeyPress(event)"></td>
+                    </tr>
+                    <tr>
+                      <td><button class="buttoncal" onclick="addToResult('7')">7</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('8')">8</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('9')">9</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('/')">÷</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="buttoncal" onclick="addToResult('4')">4</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('5')">5</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('6')">6</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('*')">x</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="buttoncal" onclick="addToResult('1')">1</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('2')">2</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('3')">3</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('-')">-</button></td>
+                    </tr>
+                    <tr>
+                      <td><button class="buttoncal" onclick="addToResult('0')">0</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('.')">.</button></td>
+                      <td><button class="buttoncal igual" onclick="calculate()">=</button></td>
+                      <td><button class="buttoncal" onclick="addToResult('+')">+</button></td>
+                    </tr>
+                  </table>
+                  <button id="btn_rstcal" class="btn btn-outline-danger" onclick="reset()">Limpiar cálculos</button>
+                </div>
+              </section>
+              
 
 
         </section>

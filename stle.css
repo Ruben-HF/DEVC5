@@ -231,6 +231,10 @@ h2{
 }
 
 
+
+
+
+
 #AppsC5{
     display: flex;
     flex-wrap: wrap;
@@ -253,9 +257,6 @@ h2{
     border-radius: 10px;
 }
 
-
-
-
 #notes{
     display: flex;
     justify-content: center;
@@ -263,6 +264,8 @@ h2{
     width: 50%;
     height: 100vh;
 }
+
+
 
 
 #notes-app {
@@ -391,7 +394,34 @@ h2{
         margin-bottom: 3% !important;
     }
 
+
+    .artPrev{
+        background-color:  whitesmoke !important;
+        padding: 1.2%;
+        text-justify: distribute;
+        display: flex;
+        flex-wrap: wrap !important;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        margin: 3%;
+    }
+
+    .contenedorPrev{
+        padding: 2%;
+        width: 100% !important;
+    }
+
+    .imgPrev{
+        height: 120px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        margin: 10px;
+    }
+
 }
+
 
 
 #contador{
@@ -526,6 +556,7 @@ tr[draggable="true"] {
 
 
 
+
 #chat{
     display: flex;
     justify-content: center;
@@ -596,3 +627,101 @@ tr[draggable="true"] {
     padding-bottom: 3%;
 }
 
+
+
+
+
+
+#artInt{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: whitesmoke;
+}
+
+.titleArtInt{   
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.artPrev{
+    background-color:  whitesmoke;
+    padding: 1.2%;
+    text-justify: distribute;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    margin: 3%;
+    width: 500px;
+}
+
+.imgPrev{
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.contenedorPrev{
+    max-width: 250px;
+    padding: 2%;
+    text-align: justify;
+}
+
+.tittleArtPrev{
+    color: #333;
+    font-size:larger;
+    font-weight: bold;
+}
+
+
+
+#mainBlog{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #333;
+}
+
+#tittleArticleBlog{
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 3%;
+    max-width: 1080px;
+    width: 100%;
+}
+
+.fotoBlog{
+    width: 100%;
+    max-width: 1080px;
+    border-radius: 10px;
+}
+
+.author{
+    font-weight: bold;
+}
+
+#articuloBlog{
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 0%;
+    padding-bottom: 9%;
+    max-width: 1080px;
+    width: 100%;
+    text-align: justify;
+}
+
+#interesC5{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}

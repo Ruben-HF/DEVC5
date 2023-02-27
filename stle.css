@@ -631,6 +631,13 @@ tr[draggable="true"] {
 
 
 
+#interesPage{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: space-evenly;
+}
+
 
 #artInt{
     display: flex;
@@ -640,6 +647,8 @@ tr[draggable="true"] {
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: whitesmoke;
+    width: 45%;
+    height: 100%;
 }
 
 .titleArtInt{   
@@ -724,4 +733,45 @@ tr[draggable="true"] {
     flex-wrap: wrap;
     padding-top: 6%;
     padding-bottom: 6%;
+}
+
+
+
+
+
+#eventosGabssa{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+#interesPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    padding: 6%;
+    box-shadow: 50 50 10px #ccc;
+}
+
+.imgEvent{
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px black;
+}
+
+#noticiaGabssa{
+    width: 45%;
+    justify-content: center;
+    background-color: whitesmoke;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#noticiaPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }

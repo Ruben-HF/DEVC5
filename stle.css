@@ -81,6 +81,7 @@ main{
 .mailto{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly !important;
 }
 
@@ -94,6 +95,7 @@ main{
 .contacts{
     color: black;
     text-decoration: none;
+    padding: 3%;
 }
 
 
@@ -330,6 +332,19 @@ h2{
 
 @media (max-width: 1080px) {
     
+
+    #blogprincipal{
+        min-height: 80vh;
+        background: linear-gradient(rgba(5,7,12,0.21),rgba(5,7,12,0.21)), url(https://www.anahuac.mx/mexico/sites/default/files/noticias/Home-Office.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        align-content:flex-end;
+    }
+
+
     #AppsC5{
         display: flex;
         flex-wrap: wrap;
@@ -418,6 +433,28 @@ h2{
         border-radius: 10px;
         box-shadow: 0 0 10px #ccc;
         margin: 10px;
+    }
+
+    .mailto{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .contacts{
+        color: black;
+        text-decoration: none;
+        padding: 3%;
+        width: 100%;
+    }
+
+    .blg-prin{
+        color: aliceblue;
+        max-width: 100%  !important;
+        max-height: 100% !important;
+        background: rgba(126, 109, 109, 0.733)
     }
 
 }
@@ -648,7 +685,7 @@ tr[draggable="true"] {
     padding-bottom: 3%;
     background-color: whitesmoke;
     width: 45%;
-    height: 100%;
+    min-width: 360px;
 }
 
 .titleArtInt{   
@@ -746,6 +783,16 @@ tr[draggable="true"] {
     background-color: whitesmoke;
 }
 
+#eventosGabssaSecundario{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #333;
+    padding-top: 6%;
+    text-align: center;
+}
+
 #interesPrincipal{
     display: flex;
     justify-content: center;
@@ -755,6 +802,20 @@ tr[draggable="true"] {
     box-shadow: 50 50 10px #ccc;
 }
 
+#interesSecundario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content:center;
+    padding: 3%;
+    width: 50%;
+    min-width: 360px;
+    box-shadow: 50 50 10px #ccc;
+}
+
+
 .imgEvent{
     max-width: 80%;
     border-radius: 10px;
@@ -763,6 +824,7 @@ tr[draggable="true"] {
 
 #noticiaGabssa{
     width: 45%;
+    min-width: 360px;
     justify-content: center;
     background-color: whitesmoke;
     padding-top: 3%;
@@ -774,4 +836,21 @@ tr[draggable="true"] {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+}
+
+#infoPrincipal{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6%;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.video{
+    width: 80%;
+    min-width: 360px;
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px black;
 }

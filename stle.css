@@ -400,9 +400,9 @@ h2{
     .calcutable {
         border-collapse: collapse;
         font-size: 20px;
-        width: 90%;
-        max-width: 600px;
-        min-width: 210px;
+        width: 80%;
+        max-width: 360px;
+        min-width: 180px;
         border-radius: 10px;
         margin: 10%;
     }

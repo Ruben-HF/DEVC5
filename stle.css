@@ -397,6 +397,15 @@ h2{
         margin-top: 3%;
     }
 
+    .calcutable {
+        border-collapse: collapse;
+        font-size: 20px;
+        width: 90%;
+        max-width: 600px;
+        min-width: 260px;
+        border-radius: 10px;
+    }
+
 
     #reset {
         font-size: 18px !important;

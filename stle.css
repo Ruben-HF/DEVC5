@@ -402,8 +402,9 @@ h2{
         font-size: 20px;
         width: 90%;
         max-width: 600px;
-        min-width: 240px;
+        min-width: 210px;
         border-radius: 10px;
+        padding: 1%;
     }
 
 

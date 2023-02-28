@@ -101,47 +101,6 @@ main{
 
 
 
-.Registro{
-    margin-top: 6%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.formu{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.textarea{
-    width: 100%;
-    margin-bottom: 3%;
-    margin-top: 3%;
-}
-
-.Lista{
-    width: 100%;
-    padding: 3%;
-    margin-top: 6%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-table{
-    width: 90%;
-    justify-content: space-evenly;
-}
-
-td{
-    flex-wrap: wrap;
-    padding-bottom: 6%;
-}
-
-
 
 
 
@@ -257,7 +216,78 @@ h2{
     margin-bottom: 3%;
     margin-top: 3%;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.titlePending{
+    width: 100% !important; 
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+#toDoView{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100% !important;
+    margin-bottom: 3%;
+}
+
+#listaPendientes{
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.contentPending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+#botonesToDo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    align-items: flex-end;
+    width: 290px;
+}
+
+.editPending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 6%;
+}
+
+.Registro{
+    margin-top: 6%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 6%;
+}
+
+.formu{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textarea{
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+
+
 
 #notes{
     display: flex;
@@ -266,9 +296,6 @@ h2{
     width: 50%;
     height: 100vh;
 }
-
-
-
 
 #notes-app {
     display: flex;
@@ -547,7 +574,6 @@ h2{
     border-collapse: collapse;
     font-size: 20px;
     width: 90%;
-    max-width: 600px;
     border-radius: 10px;
 }
   
@@ -600,7 +626,15 @@ tr[draggable="true"] {
     cursor: move;
 }
 
+table{
+    width: 90%;
+    justify-content: space-evenly;
+}
 
+td{
+    flex-wrap: wrap;
+    padding-bottom: 6%;
+}
 
 
 

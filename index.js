@@ -1,9 +1,9 @@
 console.log('Mini Apps MISAPPS generadas por Rubén Emmanuel Herrera Flores - Derechos reservados')
 
-//TODO LIST
+//TODO LIST 2
 
-function guardar(){
-    let texto = document.getElementById('textotext').value
+function guardar2(){
+    let texto = document.getElementById('pendientetxt').value
     
     let inputValue = ({
         "texto": texto
@@ -15,9 +15,9 @@ function guardar(){
     console.log(JSON.stringify(datos))
     localStorage.setItem('valores', JSON.stringify(datos))
 
-    document.getElementById('textotext').value = ''
+    document.getElementById('pendientetxt').value = ''
 
-    render()
+    render();
 }
 
 function moveUp(position) {
@@ -45,38 +45,36 @@ function moveDown(position) {
 function render() {
     console.log(localStorage.getItem('valores'))
 
-    let lista = document.getElementById('lista')
-    lista.innerHTML = `
-    <table>
-    <thead>
-    <th> Lista de Tareas: </th>
-    <br>
-    </thead>
-    </table>
+    let listaPendientes = document.getElementById('listaPendientes')
+    listaPendientes.innerHTML = `
+    <div class="titlePending">
+        <h3> Lista de Tareas: </h3>
+    </div>
     `
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
 
     datos.forEach((element,index) => {
-        lista.innerHTML += `
-        <td style="width: 100%"> ${element.texto} </td>
-        <td style="width: auto"> 
-            <button onclick="moveUp(${index})" class="btn btn-outline-primary btn-move-up" style="min-width: 100%">
+        listaPendientes.innerHTML += `
+        <section id="toDoView">
+
+            <div class="contentPending">
+                <p> ${element.texto} </p>
+            </div>
+
+            <div id="botonesToDo">
+                <button onclick="moveUp(${index})" class="btn btn-outline-primary btn-move-up">
                 <i class="fas fa-arrow-up"></i>
-            </button>
-        </td>
-        <td style="width: auto;"> 
-            <button onclick="moveDown(${index})" class="btn btn-outline-primary btn-move-down" style="min-width: 100%">
+                </button>
+
+                <button onclick="moveDown(${index})" class="btn btn-outline-primary btn-move-down">
                 <i class="fas fa-arrow-down"></i>
-            </button>
-        </td>
-        
-        <td style="min-width: 100%"> 
-            <button onclick="editar(${index})" class="btn btn-outline-secondary" style="min-width: 100%"> Editar </button> 
-        </td>
-        <td style="min-width: 100%"> 
-            <button onclick="borrar(${index})" class="btn btn-outline-success" style="min-width: 100%"> Completado </button> 
-        </td>
-        
+                </button>
+
+                <button onclick="editar(${index})" class="btn btn-outline-secondary"> Editar </button>
+                <button onclick="borrar(${index})" class="btn btn-outline-success"> Completado </button>
+            </div>
+
+        </section>
         `
     });
 }
@@ -87,51 +85,63 @@ function borrar(position){
     console.log(datos.splice(position,1))
     console.log(JSON.stringify(datos))
     localStorage.setItem('valores', JSON.stringify(datos))
-    render()
+    render();
 }
 
 
 function editar(ps){
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
+    let listaPendientes = document.getElementById('listaPendientes')
     for(let i = 0; i <= datos.length ; i++) {
         if( i == ps){
-            document.getElementById('textotext').value = datos[i].texto   
+            document.getElementById('pendientetxt').value = datos[i].texto   
 
             let nombre = datos[i].texto
 
-            lista.innerHTML = `
-            <td> ${nombre} </td>
-            <td> <button onclick="salir(this)" class=" btn btn-outline-danger" style="width:100%"> Salir </button> </td>
-            <td> <button onclick="reguardar(${i})" class="btn btn-warning" style="width:100%"> Guardar </button> </td>
-            
+            listaPendientes.innerHTML = `
+                <div class="contentPending">
+                    <p> ${nombre} </p>
+                </div>
+                
+                <div class="editPending">
+                <button onclick="salir(this)" class=" btn btn-outline-danger" style="width:45%"> Salir </button>
+                <button onclick="reguardar(${i})" class="btn btn-warning" style="width:45%"> Guardar </button>
+                </div>
             `
         }
     }
-
 }
+
+
 
 function reguardar(i){
     let datos = JSON.parse(localStorage.getItem('valores')) ? JSON.parse(localStorage.getItem('valores')) : []
 
     let reinput = ({
-        "texto": document.getElementById('textotext').value
+        "texto": document.getElementById('pendientetxt').value
     })
 
     datos[i] = reinput
     console.log(datos[i])
     localStorage.setItem('valores', JSON.stringify(datos))
 
-    document.getElementById('textotext').value = ``
+    document.getElementById('pendientetxt').value = ``
 
     render()
 }
 
 function salir(e){
     e.parentElement.remove()
-    render()
+    render();
 }
 
 render();
+
+
+
+
+
+
 
 
 

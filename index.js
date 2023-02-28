@@ -290,4 +290,10 @@ function handleKeyPress(event) {
   
 
 
+//DETENER VIDEO
+
+function stopVideo() {
+    var video = document.getElementById("video");
+    video.pause();
+}
   

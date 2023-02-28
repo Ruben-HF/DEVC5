@@ -848,9 +848,14 @@ tr[draggable="true"] {
     background-color: aliceblue;
 }
 
-.video{
+#video{
     width: 80%;
     min-width: 360px;
     border-radius: 10px;
     box-shadow: 6px 5px 10px black;
+}
+
+#stopVideo{
+    width: 80%;
+    margin: 15px;
 }

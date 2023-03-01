@@ -83,6 +83,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly !important;
+    color: white !important;
 }
 
 .cus{

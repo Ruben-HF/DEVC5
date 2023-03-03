@@ -307,3 +307,7 @@ function stopVideo() {
     video.pause();
 }
   
+function stopVideo2() {
+    var video = document.getElementById("video2");
+    video.pause();
+}

@@ -914,6 +914,7 @@ tr[draggable="true"] {
     background-color: whitesmoke;
     border-radius: 12px;
     box-shadow: 6px 5px 10px black;
+    margin-bottom: 6%;
 }
 
 .infoPrincipal2{
@@ -994,3 +995,9 @@ tr[draggable="true"] {
 }
 
 
+/* Sección de varios elementos como noticias o presentaciones*/
+
+#interesHome{
+    min-height: 600px;
+    background-color: #d0dbd5;
+}

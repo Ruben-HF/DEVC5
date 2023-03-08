@@ -951,7 +951,7 @@ tr[draggable="true"] {
     padding-right: 6%;
     padding-top: 3%;
     padding-bottom: 3%;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     background-color: whitesmoke;
 }

@@ -866,6 +866,14 @@ tr[draggable="true"] {
     box-shadow: 6px 5px 10px black;
 }
 
+.imgEvent:hover{
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px black;
+    transition: 1.2s;
+    box-shadow: 6px 6px 21px rgb(190, 145, 233);
+}
+
 #noticiaGabssa{
     width: 45%;
     min-width: 360px;
@@ -892,30 +900,40 @@ tr[draggable="true"] {
     padding-right: 3%;
     justify-content: space-around;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #ccc;
 }
 
 .infoPrincipal1{
     min-width: 360px;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     padding: 3%;
     justify-content: center;
     text-align: center;
     background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 6px 5px 10px black;
 }
 
 .infoPrincipal2{
     min-width: 360px;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     padding: 3%;
     justify-content: center;
     text-align: center;
     background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 6px 5px 10px black;
+    transition: 2s;
 }
+
+
+
+
+
 
 #infoPrincipalNos{
     width: 100%;
@@ -925,7 +943,7 @@ tr[draggable="true"] {
     padding-right: 6%;
     padding-top: 3%;
     padding-bottom: 3%;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     background-color: whitesmoke;
 }

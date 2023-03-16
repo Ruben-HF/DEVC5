@@ -14,7 +14,7 @@
 
         <header>
 
-            <nav class="navbar navbar-dark bg-dark fixed-top">
+            <nav class="navbar navbar-dark bg-dark sticky-top">
                 <div class="container-fluid">
                     <img src="https://www.gabssa.com.mx/img/gabssa.png" alt="Grupo Gabssa" style="width: 39px; height: 39px;">
                     <a class="navbar-brand" href="/index.html">Contacto</a>
@@ -53,49 +53,169 @@
 
         </header>
 
-        <div style="height: 1000%; background-color: whitesmoke;"></div>
 
-        <main>
-          <section>
-             <br>
-            <h1>Estamos trabajando en un chat en tiempo real.</h1>
-            <h6>Se notificará cuando esté habilitado...</h6>
-          </section>         
-        </main>
+        <section style="background-color: whitesmoke;">
+            <br>
+           <h1 style="margin-left: 6%;">Estamos trabajando en un chat en tiempo real.</h1>
+           <h6 style="margin-left: 6%;">Se notificará cuando esté habilitado...</h6>
+        </section> 
 
+        <section id="chats">
+            <section id="chat">
 
-        <section id="chat">
-
-            <div class="chat-container">
-                <div class="chat-display">
-                    <div class="message message-received">
-                        <div class="message-bubble">
-                            Hola, Somos el C5, de Grupo Gabssa.
+                <div class="chat-container">
+                    <h1>Conversación Home Office</h1>
+                    <div class="chat-display">
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                Hola, Somos el C5, de Grupo Gabssa. ¿En qué podemos apoyarte?
+                            </div>
+                        </div>
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Hola, me interesa trabajar en home office. 
+                            </div>
+                        </div>
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                ¡Nos alegra que te interese!
+                            </div>
+                        </div>
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                ¿Nos podrías brindar el motivo por el cuál te interesa trabajar desde tu hogar?
+                            </div>
+                        </div>
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Principalmente por temas de transporte y para ahorrar un poco en el transporte.
+                            </div>
+                        </div>
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                Claro, tener home office te permitirá ahorrar tiempo y dinero en transporte, además de diversas actividades de integración ¡Con premios!.
+                            </div>
+                        </div>
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                <img class="imgChat" src="/Assets/HomeOffice/Premios.PNG" alt="">
+                            </div>
+                        </div>
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Me parece excelente, ¿Cómo puedo aplicar para trabajar en casa?
+                            </div>
+                        </div>
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                Claro, una vez que sabemos que tienes interés, respondes un formulario de registro y luego llevamos acabo un proceso de revisión de indicadores: Ausentismo, retardos y viabilidad que revisamos en colaboración con tu supervisor.
+                            </div>
+                        </div>
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                ¡Excelente! Podemos continuar...
+                            </div>
                         </div>
                     </div>
-                    <div class="message message-sent">
-                        <div class="message-bubble">
-                            Hola, ¿Pueden apoyarme con un tema de home office?
-                        </div>
+    
+                    <div class="chat-input">
+                        <input type="text" placeholder="Escribe tu mensaje aquí" style="min-height: 39px; width: 100%; margin-bottom: 1%;">
+                        <button class="btn btn-success" style="width: 60%;">Enviar</button>
+                        <input type="file" class="input-file" style="width: 39%;">
                     </div>
-                    <div class="message message-received">
-                        <div class="message-bubble">
-                            Claro, somos un equipo especializado, ¿En qué podemos apoyarte?.
-                        </div>
+    
+    
+                    <div class="chat-footer">
+                        <button class="clear-history-button btn btn-outline-danger" style="width: 98%;">Borrar historial</button>
                     </div>
                 </div>
+            
+            </section>
+    
+            <section id="chat">
+    
+                <div class="chat-container">
+                    <h1>Conversación Interna</h1>
+                    <div class="chat-display">
+                        
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Hola, ¿Me pueden compartir información de los eventos de este mes en Odesa?. 
+                            </div>
+                        </div>
 
-                <div class="chat-input">
-                    <input type="text" placeholder="Escribe tu mensaje aquí" style="min-height: 39px; width: 100%; margin-bottom: 1%;">
-                    <button class="btn btn-success" style="width: 100%;">Enviar</button>
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                Buen día, ¡con gusto! Una de las actividades de mes es la campaña de vacunación. Te comparto una fotografía informativa.
+                            </div>
+                        </div>
+                        
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                <img class="imgChat" src="/Assets/C-Salud.jpeg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Excelente. 
+                            </div>
+                        </div>
+
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                Tambien habrá venta en los cúbiculos de la sucursal, de igual manera te comento que si estás interesado o conoces a alguien que quiera vender con nosotros con gusto los canalizamos con el área comercial.
+                            </div>
+                        </div>
+
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                <img class="imgChat" src="/Assets/Venta1.jpeg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Sí, mi tía vende unos llaveros, mira: 
+                            </div>
+                        </div>
+
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                <img class="imgChat" src="/Assets/Venta2.jpeg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="message message-sent">
+                            <div class="message-bubble">
+                                Estaría genial si me compartes más datos para contactar al área, gracias. 
+                            </div>
+                        </div>
+
+                        <div class="message message-received">
+                            <div class="message-bubble">
+                                Con gusto, en breve te comparto la información.
+                            </div>
+                        </div>
+
+                    </div>
+
+    
+                    <div class="chat-input">
+                        <input type="text" placeholder="Escribe tu mensaje aquí" style="min-height: 39px; width: 100%; margin-bottom: 1%;">
+                        <button class="btn btn-success" style="width: 60%;">Enviar</button>
+                        <input type="file" class="input-file" style="width: 39%;">
+                    </div>
+    
+    
+                    <div class="chat-footer">
+                        <button class="clear-history-button btn btn-outline-danger" style="width: 98%;">Borrar historial</button>
+                    </div>
                 </div>
-                <div class="chat-footer">
-                    <button class="clear-history-button btn btn-outline-danger" style="width: 98%;">Borrar historial</button>
-                </div>
-            </div>
-        
+            
+            </section>
         </section>
-
+        
 
         <main></main>
 

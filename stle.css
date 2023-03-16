@@ -760,17 +760,11 @@ tr[draggable="true"] {
     flex-wrap: wrap;
     background-color: whitesmoke;
     justify-content: space-evenly;
+    height: 90vh;
 }
 
 
 #artInt{
-    overflow-y: scroll; 
-    overflow-x: hidden; 
-    flex-wrap: nowrap;
-    max-height: 69vh;
-    justify-content: space-between;
-    align-items: center;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -778,7 +772,7 @@ tr[draggable="true"] {
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: whitesmoke;
-    width: 45%;
+    width: 27%;
     min-width: 360px;
 }
 
@@ -912,6 +906,7 @@ tr[draggable="true"] {
 
 .imgEvent{
     max-width: 80%;
+    max-height: 60vh;
     border-radius: 10px;
     box-shadow: 6px 5px 10px black;
 }
@@ -925,12 +920,19 @@ tr[draggable="true"] {
 }
 
 #noticiaGabssa{
-    width: 45%;
+    width: 63%;
     min-width: 360px;
     justify-content: center;
     background-color: whitesmoke;
     padding-top: 3%;
     padding-bottom: 3%;
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    flex-wrap: nowrap;
+    max-height: 81vh;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 #noticiaPrincipal{
@@ -941,15 +943,13 @@ tr[draggable="true"] {
 }
 
 #infoPrincipal{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding-top: 6%;
     padding-bottom: 6%;
     padding-left: 3%;
     padding-right: 3%;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: space-between;
     background-color: #ccc;
 }
 
